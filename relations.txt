@@ -1,0 +1,17 @@
+Relação entre `Jogador` e `JogadorHumano`, `JogadorComputador`:
+Há uma relação de herança simples pois JogadorComputador e JogadorComputador herdam as características de Jogador,
+temos um relação "é um", JogadorHumano é um Jogador e JogadorComputador é um Jogador
+
+Relação entre Jogador e Tabuleiro:
+Relação de agregação, no método fazer jogada é recebido um objeto da classe Tabuleiro, como argumento.
+No entanto, em nenhum momento esse objeto foi instanciado e a relação entre eles é mais fraca.
+Essa mesma relção ocorre entre as classes que herdam de Jogador
+
+Relação entre JogoVelha e Jogador: agregação
+JogoVelha recebe objeto do tipo Jogador, mas em nenhum momento cria jogadores,
+temos então uma relação mais fraca já que Jogador pode existir independentemente
+
+Relação entre JogoVelha e Tabuleiro: Composição
+Dentro de JogoVelha é instanciado um Tabuleiro, mostrando uma dependência entre eles,
+se um for destruído o outro também é, não existe independentemente, Tabuleiro depende de JogoVelha
+
